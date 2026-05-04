@@ -1,0 +1,33 @@
+[ {
+  "id" : 1,
+  "title" : "Inception",
+  "genre" : "Sci-Fi",
+  "durationMinutes" : 148,
+  "rating" : 8.8,
+  "posterUrl" : "https://s3.amazonaws.com/nightjarprod/content/uploads/sites/20/2021/12/13131307/9gk7adHYeDvHkCSEqAvQNLV5Uge-scaled.jpg",
+  "description" : "A thief enters dreams to steal secrets, then gets a chance at redemption."
+}, {
+  "id" : 2,
+  "title" : "Interstellar",
+  "genre" : "Sci-Fi",
+  "durationMinutes" : 169,
+  "rating" : 8.6,
+  "posterUrl" : "https://image.tmdb.org/t/p/w500/gEU2QniE6E77NI6lCU6MxlNBvIx.jpg",
+  "description" : "Explorers travel through a wormhole in space to save humanity."
+}, {
+  "id" : 3,
+  "title" : "Walampoori- Seven and Half Dreams",
+  "genre" : "Action",
+  "durationMinutes" : 150,
+  "rating" : 8.6,
+  "posterUrl" : "https://upload.wikimedia.org/wikipedia/en/thumb/c/ce/Walampoori_Seven_and_Half_Dreams_Poster.jpg/250px-Walampoori_Seven_and_Half_Dreams_Poster.jpg",
+  "description" : "Five village con men join a traveling performance group as cover. A fake priest recruits them to pose as businessmen in a scheme to purchase two Walampooris.\r\n\r\n"
+}, {
+  "id" : 4,
+  "title" : "Father",
+  "genre" : "Action",
+  "durationMinutes" : 116,
+  "rating" : 9.5,
+  "posterUrl" : "https://upload.wikimedia.org/wikipedia/en/6/6d/Father_sinhala_film_teaser_poster.jpg",
+  "description" : "Father is a 2026 Sri Lankan Sinhala gangster film directed by Chaminda Jayasuriya and produced by Dr. Shantha Geethadeva for Emica Productions. The film is based on a series of true events revolved around the gangster Gampaha Osmond, that occurred between the 1976 and 1991 in Sri Lanka."
+} ]

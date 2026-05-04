@@ -1,0 +1,2677 @@
+[ {
+  "id" : 1,
+  "screeningId" : 1,
+  "seatNumber" : "A1",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 2,
+  "screeningId" : 1,
+  "seatNumber" : "A2",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 3,
+  "screeningId" : 1,
+  "seatNumber" : "A3",
+  "booked" : false,
+  "type" : "VIP"
+}, {
+  "id" : 4,
+  "screeningId" : 2,
+  "seatNumber" : "B1",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 5,
+  "screeningId" : 2,
+  "seatNumber" : "B2",
+  "booked" : false,
+  "type" : "VIP"
+}, {
+  "id" : 6,
+  "screeningId" : 2,
+  "seatNumber" : "B3",
+  "booked" : true,
+  "type" : "STANDARD"
+}, {
+  "id" : 7,
+  "screeningId" : 1,
+  "seatNumber" : "A1",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 8,
+  "screeningId" : 1,
+  "seatNumber" : "A2",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 9,
+  "screeningId" : 1,
+  "seatNumber" : "A3",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 10,
+  "screeningId" : 1,
+  "seatNumber" : "A4",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 11,
+  "screeningId" : 1,
+  "seatNumber" : "A5",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 12,
+  "screeningId" : 1,
+  "seatNumber" : "A6",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 13,
+  "screeningId" : 1,
+  "seatNumber" : "A7",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 14,
+  "screeningId" : 1,
+  "seatNumber" : "A8",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 15,
+  "screeningId" : 1,
+  "seatNumber" : "A9",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 16,
+  "screeningId" : 1,
+  "seatNumber" : "A10",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 17,
+  "screeningId" : 1,
+  "seatNumber" : "B1",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 18,
+  "screeningId" : 1,
+  "seatNumber" : "B2",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 19,
+  "screeningId" : 1,
+  "seatNumber" : "B3",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 20,
+  "screeningId" : 1,
+  "seatNumber" : "B4",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 21,
+  "screeningId" : 1,
+  "seatNumber" : "B5",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 22,
+  "screeningId" : 1,
+  "seatNumber" : "B6",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 23,
+  "screeningId" : 1,
+  "seatNumber" : "B7",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 24,
+  "screeningId" : 1,
+  "seatNumber" : "B8",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 25,
+  "screeningId" : 1,
+  "seatNumber" : "B9",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 26,
+  "screeningId" : 1,
+  "seatNumber" : "B10",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 27,
+  "screeningId" : 1,
+  "seatNumber" : "C1",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 28,
+  "screeningId" : 1,
+  "seatNumber" : "C2",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 29,
+  "screeningId" : 1,
+  "seatNumber" : "C3",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 30,
+  "screeningId" : 1,
+  "seatNumber" : "C4",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 31,
+  "screeningId" : 1,
+  "seatNumber" : "C5",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 32,
+  "screeningId" : 1,
+  "seatNumber" : "C6",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 33,
+  "screeningId" : 1,
+  "seatNumber" : "C7",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 34,
+  "screeningId" : 1,
+  "seatNumber" : "C8",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 35,
+  "screeningId" : 1,
+  "seatNumber" : "C9",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 36,
+  "screeningId" : 1,
+  "seatNumber" : "C10",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 37,
+  "screeningId" : 1,
+  "seatNumber" : "D1",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 38,
+  "screeningId" : 1,
+  "seatNumber" : "D2",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 39,
+  "screeningId" : 1,
+  "seatNumber" : "D3",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 40,
+  "screeningId" : 1,
+  "seatNumber" : "D4",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 41,
+  "screeningId" : 1,
+  "seatNumber" : "D5",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 42,
+  "screeningId" : 1,
+  "seatNumber" : "D6",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 43,
+  "screeningId" : 1,
+  "seatNumber" : "D7",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 44,
+  "screeningId" : 1,
+  "seatNumber" : "D8",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 45,
+  "screeningId" : 1,
+  "seatNumber" : "D9",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 46,
+  "screeningId" : 1,
+  "seatNumber" : "D10",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 47,
+  "screeningId" : 1,
+  "seatNumber" : "E1",
+  "booked" : false,
+  "type" : "VIP"
+}, {
+  "id" : 48,
+  "screeningId" : 1,
+  "seatNumber" : "E2",
+  "booked" : false,
+  "type" : "VIP"
+}, {
+  "id" : 49,
+  "screeningId" : 1,
+  "seatNumber" : "E3",
+  "booked" : false,
+  "type" : "VIP"
+}, {
+  "id" : 50,
+  "screeningId" : 1,
+  "seatNumber" : "E4",
+  "booked" : false,
+  "type" : "VIP"
+}, {
+  "id" : 51,
+  "screeningId" : 1,
+  "seatNumber" : "E5",
+  "booked" : false,
+  "type" : "VIP"
+}, {
+  "id" : 52,
+  "screeningId" : 1,
+  "seatNumber" : "E6",
+  "booked" : false,
+  "type" : "VIP"
+}, {
+  "id" : 53,
+  "screeningId" : 1,
+  "seatNumber" : "E7",
+  "booked" : false,
+  "type" : "VIP"
+}, {
+  "id" : 54,
+  "screeningId" : 1,
+  "seatNumber" : "E8",
+  "booked" : false,
+  "type" : "VIP"
+}, {
+  "id" : 55,
+  "screeningId" : 1,
+  "seatNumber" : "E9",
+  "booked" : false,
+  "type" : "VIP"
+}, {
+  "id" : 56,
+  "screeningId" : 1,
+  "seatNumber" : "E10",
+  "booked" : false,
+  "type" : "VIP"
+}, {
+  "id" : 57,
+  "screeningId" : 1,
+  "seatNumber" : "F1",
+  "booked" : false,
+  "type" : "VIP"
+}, {
+  "id" : 58,
+  "screeningId" : 1,
+  "seatNumber" : "F2",
+  "booked" : false,
+  "type" : "VIP"
+}, {
+  "id" : 59,
+  "screeningId" : 1,
+  "seatNumber" : "F3",
+  "booked" : false,
+  "type" : "VIP"
+}, {
+  "id" : 60,
+  "screeningId" : 1,
+  "seatNumber" : "F4",
+  "booked" : false,
+  "type" : "VIP"
+}, {
+  "id" : 61,
+  "screeningId" : 1,
+  "seatNumber" : "F5",
+  "booked" : false,
+  "type" : "VIP"
+}, {
+  "id" : 62,
+  "screeningId" : 1,
+  "seatNumber" : "F6",
+  "booked" : false,
+  "type" : "VIP"
+}, {
+  "id" : 63,
+  "screeningId" : 1,
+  "seatNumber" : "F7",
+  "booked" : false,
+  "type" : "VIP"
+}, {
+  "id" : 64,
+  "screeningId" : 1,
+  "seatNumber" : "F8",
+  "booked" : false,
+  "type" : "VIP"
+}, {
+  "id" : 65,
+  "screeningId" : 1,
+  "seatNumber" : "F9",
+  "booked" : false,
+  "type" : "VIP"
+}, {
+  "id" : 66,
+  "screeningId" : 1,
+  "seatNumber" : "F10",
+  "booked" : false,
+  "type" : "VIP"
+}, {
+  "id" : 67,
+  "screeningId" : 1,
+  "seatNumber" : "A1",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 68,
+  "screeningId" : 1,
+  "seatNumber" : "A2",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 69,
+  "screeningId" : 1,
+  "seatNumber" : "A3",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 70,
+  "screeningId" : 1,
+  "seatNumber" : "A4",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 71,
+  "screeningId" : 1,
+  "seatNumber" : "A5",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 72,
+  "screeningId" : 1,
+  "seatNumber" : "A6",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 73,
+  "screeningId" : 1,
+  "seatNumber" : "A7",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 74,
+  "screeningId" : 1,
+  "seatNumber" : "A8",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 75,
+  "screeningId" : 1,
+  "seatNumber" : "A9",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 76,
+  "screeningId" : 1,
+  "seatNumber" : "A10",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 77,
+  "screeningId" : 1,
+  "seatNumber" : "B1",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 78,
+  "screeningId" : 1,
+  "seatNumber" : "B2",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 79,
+  "screeningId" : 1,
+  "seatNumber" : "B3",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 80,
+  "screeningId" : 1,
+  "seatNumber" : "B4",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 81,
+  "screeningId" : 1,
+  "seatNumber" : "B5",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 82,
+  "screeningId" : 1,
+  "seatNumber" : "B6",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 83,
+  "screeningId" : 1,
+  "seatNumber" : "B7",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 84,
+  "screeningId" : 1,
+  "seatNumber" : "B8",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 85,
+  "screeningId" : 1,
+  "seatNumber" : "B9",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 86,
+  "screeningId" : 1,
+  "seatNumber" : "B10",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 87,
+  "screeningId" : 1,
+  "seatNumber" : "C1",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 88,
+  "screeningId" : 1,
+  "seatNumber" : "C2",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 89,
+  "screeningId" : 1,
+  "seatNumber" : "C3",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 90,
+  "screeningId" : 1,
+  "seatNumber" : "C4",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 91,
+  "screeningId" : 1,
+  "seatNumber" : "C5",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 92,
+  "screeningId" : 1,
+  "seatNumber" : "C6",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 93,
+  "screeningId" : 1,
+  "seatNumber" : "C7",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 94,
+  "screeningId" : 1,
+  "seatNumber" : "C8",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 95,
+  "screeningId" : 1,
+  "seatNumber" : "C9",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 96,
+  "screeningId" : 1,
+  "seatNumber" : "C10",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 97,
+  "screeningId" : 1,
+  "seatNumber" : "D1",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 98,
+  "screeningId" : 1,
+  "seatNumber" : "D2",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 99,
+  "screeningId" : 1,
+  "seatNumber" : "D3",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 100,
+  "screeningId" : 1,
+  "seatNumber" : "D4",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 101,
+  "screeningId" : 1,
+  "seatNumber" : "D5",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 102,
+  "screeningId" : 1,
+  "seatNumber" : "D6",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 103,
+  "screeningId" : 1,
+  "seatNumber" : "D7",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 104,
+  "screeningId" : 1,
+  "seatNumber" : "D8",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 105,
+  "screeningId" : 1,
+  "seatNumber" : "D9",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 106,
+  "screeningId" : 1,
+  "seatNumber" : "D10",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 107,
+  "screeningId" : 1,
+  "seatNumber" : "E1",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 108,
+  "screeningId" : 1,
+  "seatNumber" : "E2",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 109,
+  "screeningId" : 1,
+  "seatNumber" : "E3",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 110,
+  "screeningId" : 1,
+  "seatNumber" : "E4",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 111,
+  "screeningId" : 1,
+  "seatNumber" : "E5",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 112,
+  "screeningId" : 1,
+  "seatNumber" : "E6",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 113,
+  "screeningId" : 1,
+  "seatNumber" : "E7",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 114,
+  "screeningId" : 1,
+  "seatNumber" : "E8",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 115,
+  "screeningId" : 1,
+  "seatNumber" : "E9",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 116,
+  "screeningId" : 1,
+  "seatNumber" : "E10",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 117,
+  "screeningId" : 1,
+  "seatNumber" : "F1",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 118,
+  "screeningId" : 1,
+  "seatNumber" : "F2",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 119,
+  "screeningId" : 1,
+  "seatNumber" : "F3",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 120,
+  "screeningId" : 1,
+  "seatNumber" : "F4",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 121,
+  "screeningId" : 1,
+  "seatNumber" : "F5",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 122,
+  "screeningId" : 1,
+  "seatNumber" : "F6",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 123,
+  "screeningId" : 1,
+  "seatNumber" : "F7",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 124,
+  "screeningId" : 1,
+  "seatNumber" : "F8",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 125,
+  "screeningId" : 1,
+  "seatNumber" : "F9",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 126,
+  "screeningId" : 1,
+  "seatNumber" : "F10",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 127,
+  "screeningId" : 1,
+  "seatNumber" : "G1",
+  "booked" : false,
+  "type" : "VIP"
+}, {
+  "id" : 128,
+  "screeningId" : 1,
+  "seatNumber" : "G2",
+  "booked" : false,
+  "type" : "VIP"
+}, {
+  "id" : 129,
+  "screeningId" : 1,
+  "seatNumber" : "G3",
+  "booked" : false,
+  "type" : "VIP"
+}, {
+  "id" : 130,
+  "screeningId" : 1,
+  "seatNumber" : "G4",
+  "booked" : false,
+  "type" : "VIP"
+}, {
+  "id" : 131,
+  "screeningId" : 1,
+  "seatNumber" : "G5",
+  "booked" : false,
+  "type" : "VIP"
+}, {
+  "id" : 132,
+  "screeningId" : 1,
+  "seatNumber" : "G6",
+  "booked" : false,
+  "type" : "VIP"
+}, {
+  "id" : 133,
+  "screeningId" : 1,
+  "seatNumber" : "G7",
+  "booked" : false,
+  "type" : "VIP"
+}, {
+  "id" : 134,
+  "screeningId" : 1,
+  "seatNumber" : "G8",
+  "booked" : false,
+  "type" : "VIP"
+}, {
+  "id" : 135,
+  "screeningId" : 1,
+  "seatNumber" : "G9",
+  "booked" : false,
+  "type" : "VIP"
+}, {
+  "id" : 136,
+  "screeningId" : 1,
+  "seatNumber" : "G10",
+  "booked" : false,
+  "type" : "VIP"
+}, {
+  "id" : 137,
+  "screeningId" : 1,
+  "seatNumber" : "H1",
+  "booked" : false,
+  "type" : "VIP"
+}, {
+  "id" : 138,
+  "screeningId" : 1,
+  "seatNumber" : "H2",
+  "booked" : false,
+  "type" : "VIP"
+}, {
+  "id" : 139,
+  "screeningId" : 1,
+  "seatNumber" : "H3",
+  "booked" : false,
+  "type" : "VIP"
+}, {
+  "id" : 140,
+  "screeningId" : 1,
+  "seatNumber" : "H4",
+  "booked" : false,
+  "type" : "VIP"
+}, {
+  "id" : 141,
+  "screeningId" : 1,
+  "seatNumber" : "H5",
+  "booked" : false,
+  "type" : "VIP"
+}, {
+  "id" : 142,
+  "screeningId" : 1,
+  "seatNumber" : "H6",
+  "booked" : false,
+  "type" : "VIP"
+}, {
+  "id" : 143,
+  "screeningId" : 1,
+  "seatNumber" : "H7",
+  "booked" : false,
+  "type" : "VIP"
+}, {
+  "id" : 144,
+  "screeningId" : 1,
+  "seatNumber" : "H8",
+  "booked" : false,
+  "type" : "VIP"
+}, {
+  "id" : 145,
+  "screeningId" : 1,
+  "seatNumber" : "H9",
+  "booked" : false,
+  "type" : "VIP"
+}, {
+  "id" : 146,
+  "screeningId" : 1,
+  "seatNumber" : "H10",
+  "booked" : false,
+  "type" : "VIP"
+}, {
+  "id" : 147,
+  "screeningId" : 1,
+  "seatNumber" : "A1",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 148,
+  "screeningId" : 1,
+  "seatNumber" : "A2",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 149,
+  "screeningId" : 1,
+  "seatNumber" : "A3",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 150,
+  "screeningId" : 1,
+  "seatNumber" : "A4",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 151,
+  "screeningId" : 1,
+  "seatNumber" : "A5",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 152,
+  "screeningId" : 1,
+  "seatNumber" : "A6",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 153,
+  "screeningId" : 1,
+  "seatNumber" : "A7",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 154,
+  "screeningId" : 1,
+  "seatNumber" : "A8",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 155,
+  "screeningId" : 1,
+  "seatNumber" : "A9",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 156,
+  "screeningId" : 1,
+  "seatNumber" : "A10",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 157,
+  "screeningId" : 1,
+  "seatNumber" : "B1",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 158,
+  "screeningId" : 1,
+  "seatNumber" : "B2",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 159,
+  "screeningId" : 1,
+  "seatNumber" : "B3",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 160,
+  "screeningId" : 1,
+  "seatNumber" : "B4",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 161,
+  "screeningId" : 1,
+  "seatNumber" : "B5",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 162,
+  "screeningId" : 1,
+  "seatNumber" : "B6",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 163,
+  "screeningId" : 1,
+  "seatNumber" : "B7",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 164,
+  "screeningId" : 1,
+  "seatNumber" : "B8",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 165,
+  "screeningId" : 1,
+  "seatNumber" : "B9",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 166,
+  "screeningId" : 1,
+  "seatNumber" : "B10",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 167,
+  "screeningId" : 1,
+  "seatNumber" : "C1",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 168,
+  "screeningId" : 1,
+  "seatNumber" : "C2",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 169,
+  "screeningId" : 1,
+  "seatNumber" : "C3",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 170,
+  "screeningId" : 1,
+  "seatNumber" : "C4",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 171,
+  "screeningId" : 1,
+  "seatNumber" : "C5",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 172,
+  "screeningId" : 1,
+  "seatNumber" : "C6",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 173,
+  "screeningId" : 1,
+  "seatNumber" : "C7",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 174,
+  "screeningId" : 1,
+  "seatNumber" : "C8",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 175,
+  "screeningId" : 1,
+  "seatNumber" : "C9",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 176,
+  "screeningId" : 1,
+  "seatNumber" : "C10",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 177,
+  "screeningId" : 1,
+  "seatNumber" : "D1",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 178,
+  "screeningId" : 1,
+  "seatNumber" : "D2",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 179,
+  "screeningId" : 1,
+  "seatNumber" : "D3",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 180,
+  "screeningId" : 1,
+  "seatNumber" : "D4",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 181,
+  "screeningId" : 1,
+  "seatNumber" : "D5",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 182,
+  "screeningId" : 1,
+  "seatNumber" : "D6",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 183,
+  "screeningId" : 1,
+  "seatNumber" : "D7",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 184,
+  "screeningId" : 1,
+  "seatNumber" : "D8",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 185,
+  "screeningId" : 1,
+  "seatNumber" : "D9",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 186,
+  "screeningId" : 1,
+  "seatNumber" : "D10",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 187,
+  "screeningId" : 1,
+  "seatNumber" : "E1",
+  "booked" : false,
+  "type" : "VIP"
+}, {
+  "id" : 188,
+  "screeningId" : 1,
+  "seatNumber" : "E2",
+  "booked" : false,
+  "type" : "VIP"
+}, {
+  "id" : 189,
+  "screeningId" : 1,
+  "seatNumber" : "E3",
+  "booked" : false,
+  "type" : "VIP"
+}, {
+  "id" : 190,
+  "screeningId" : 1,
+  "seatNumber" : "E4",
+  "booked" : false,
+  "type" : "VIP"
+}, {
+  "id" : 191,
+  "screeningId" : 1,
+  "seatNumber" : "E5",
+  "booked" : false,
+  "type" : "VIP"
+}, {
+  "id" : 192,
+  "screeningId" : 1,
+  "seatNumber" : "E6",
+  "booked" : false,
+  "type" : "VIP"
+}, {
+  "id" : 193,
+  "screeningId" : 1,
+  "seatNumber" : "E7",
+  "booked" : false,
+  "type" : "VIP"
+}, {
+  "id" : 194,
+  "screeningId" : 1,
+  "seatNumber" : "E8",
+  "booked" : false,
+  "type" : "VIP"
+}, {
+  "id" : 195,
+  "screeningId" : 1,
+  "seatNumber" : "E9",
+  "booked" : false,
+  "type" : "VIP"
+}, {
+  "id" : 196,
+  "screeningId" : 1,
+  "seatNumber" : "E10",
+  "booked" : false,
+  "type" : "VIP"
+}, {
+  "id" : 197,
+  "screeningId" : 1,
+  "seatNumber" : "F1",
+  "booked" : false,
+  "type" : "VIP"
+}, {
+  "id" : 198,
+  "screeningId" : 1,
+  "seatNumber" : "F2",
+  "booked" : false,
+  "type" : "VIP"
+}, {
+  "id" : 199,
+  "screeningId" : 1,
+  "seatNumber" : "F3",
+  "booked" : false,
+  "type" : "VIP"
+}, {
+  "id" : 200,
+  "screeningId" : 1,
+  "seatNumber" : "F4",
+  "booked" : false,
+  "type" : "VIP"
+}, {
+  "id" : 201,
+  "screeningId" : 1,
+  "seatNumber" : "F5",
+  "booked" : false,
+  "type" : "VIP"
+}, {
+  "id" : 202,
+  "screeningId" : 1,
+  "seatNumber" : "F6",
+  "booked" : false,
+  "type" : "VIP"
+}, {
+  "id" : 203,
+  "screeningId" : 1,
+  "seatNumber" : "F7",
+  "booked" : false,
+  "type" : "VIP"
+}, {
+  "id" : 204,
+  "screeningId" : 1,
+  "seatNumber" : "F8",
+  "booked" : false,
+  "type" : "VIP"
+}, {
+  "id" : 205,
+  "screeningId" : 1,
+  "seatNumber" : "F9",
+  "booked" : false,
+  "type" : "VIP"
+}, {
+  "id" : 206,
+  "screeningId" : 1,
+  "seatNumber" : "F10",
+  "booked" : false,
+  "type" : "VIP"
+}, {
+  "id" : 207,
+  "screeningId" : 2,
+  "seatNumber" : "A1",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 208,
+  "screeningId" : 2,
+  "seatNumber" : "A2",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 209,
+  "screeningId" : 2,
+  "seatNumber" : "A3",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 210,
+  "screeningId" : 2,
+  "seatNumber" : "A4",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 211,
+  "screeningId" : 2,
+  "seatNumber" : "A5",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 212,
+  "screeningId" : 2,
+  "seatNumber" : "A6",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 213,
+  "screeningId" : 2,
+  "seatNumber" : "A7",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 214,
+  "screeningId" : 2,
+  "seatNumber" : "A8",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 215,
+  "screeningId" : 2,
+  "seatNumber" : "A9",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 216,
+  "screeningId" : 2,
+  "seatNumber" : "A10",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 217,
+  "screeningId" : 2,
+  "seatNumber" : "B1",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 218,
+  "screeningId" : 2,
+  "seatNumber" : "B2",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 219,
+  "screeningId" : 2,
+  "seatNumber" : "B3",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 220,
+  "screeningId" : 2,
+  "seatNumber" : "B4",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 221,
+  "screeningId" : 2,
+  "seatNumber" : "B5",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 222,
+  "screeningId" : 2,
+  "seatNumber" : "B6",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 223,
+  "screeningId" : 2,
+  "seatNumber" : "B7",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 224,
+  "screeningId" : 2,
+  "seatNumber" : "B8",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 225,
+  "screeningId" : 2,
+  "seatNumber" : "B9",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 226,
+  "screeningId" : 2,
+  "seatNumber" : "B10",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 227,
+  "screeningId" : 2,
+  "seatNumber" : "C1",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 228,
+  "screeningId" : 2,
+  "seatNumber" : "C2",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 229,
+  "screeningId" : 2,
+  "seatNumber" : "C3",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 230,
+  "screeningId" : 2,
+  "seatNumber" : "C4",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 231,
+  "screeningId" : 2,
+  "seatNumber" : "C5",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 232,
+  "screeningId" : 2,
+  "seatNumber" : "C6",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 233,
+  "screeningId" : 2,
+  "seatNumber" : "C7",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 234,
+  "screeningId" : 2,
+  "seatNumber" : "C8",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 235,
+  "screeningId" : 2,
+  "seatNumber" : "C9",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 236,
+  "screeningId" : 2,
+  "seatNumber" : "C10",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 237,
+  "screeningId" : 2,
+  "seatNumber" : "D1",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 238,
+  "screeningId" : 2,
+  "seatNumber" : "D2",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 239,
+  "screeningId" : 2,
+  "seatNumber" : "D3",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 240,
+  "screeningId" : 2,
+  "seatNumber" : "D4",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 241,
+  "screeningId" : 2,
+  "seatNumber" : "D5",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 242,
+  "screeningId" : 2,
+  "seatNumber" : "D6",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 243,
+  "screeningId" : 2,
+  "seatNumber" : "D7",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 244,
+  "screeningId" : 2,
+  "seatNumber" : "D8",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 245,
+  "screeningId" : 2,
+  "seatNumber" : "D9",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 246,
+  "screeningId" : 2,
+  "seatNumber" : "D10",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 247,
+  "screeningId" : 2,
+  "seatNumber" : "E1",
+  "booked" : false,
+  "type" : "VIP"
+}, {
+  "id" : 248,
+  "screeningId" : 2,
+  "seatNumber" : "E2",
+  "booked" : false,
+  "type" : "VIP"
+}, {
+  "id" : 249,
+  "screeningId" : 2,
+  "seatNumber" : "E3",
+  "booked" : true,
+  "type" : "VIP"
+}, {
+  "id" : 250,
+  "screeningId" : 2,
+  "seatNumber" : "E4",
+  "booked" : true,
+  "type" : "VIP"
+}, {
+  "id" : 251,
+  "screeningId" : 2,
+  "seatNumber" : "E5",
+  "booked" : true,
+  "type" : "VIP"
+}, {
+  "id" : 252,
+  "screeningId" : 2,
+  "seatNumber" : "E6",
+  "booked" : false,
+  "type" : "VIP"
+}, {
+  "id" : 253,
+  "screeningId" : 2,
+  "seatNumber" : "E7",
+  "booked" : false,
+  "type" : "VIP"
+}, {
+  "id" : 254,
+  "screeningId" : 2,
+  "seatNumber" : "E8",
+  "booked" : false,
+  "type" : "VIP"
+}, {
+  "id" : 255,
+  "screeningId" : 2,
+  "seatNumber" : "E9",
+  "booked" : false,
+  "type" : "VIP"
+}, {
+  "id" : 256,
+  "screeningId" : 2,
+  "seatNumber" : "E10",
+  "booked" : false,
+  "type" : "VIP"
+}, {
+  "id" : 257,
+  "screeningId" : 2,
+  "seatNumber" : "F1",
+  "booked" : false,
+  "type" : "VIP"
+}, {
+  "id" : 258,
+  "screeningId" : 2,
+  "seatNumber" : "F2",
+  "booked" : false,
+  "type" : "VIP"
+}, {
+  "id" : 259,
+  "screeningId" : 2,
+  "seatNumber" : "F3",
+  "booked" : false,
+  "type" : "VIP"
+}, {
+  "id" : 260,
+  "screeningId" : 2,
+  "seatNumber" : "F4",
+  "booked" : false,
+  "type" : "VIP"
+}, {
+  "id" : 261,
+  "screeningId" : 2,
+  "seatNumber" : "F5",
+  "booked" : false,
+  "type" : "VIP"
+}, {
+  "id" : 262,
+  "screeningId" : 2,
+  "seatNumber" : "F6",
+  "booked" : false,
+  "type" : "VIP"
+}, {
+  "id" : 263,
+  "screeningId" : 2,
+  "seatNumber" : "F7",
+  "booked" : false,
+  "type" : "VIP"
+}, {
+  "id" : 264,
+  "screeningId" : 2,
+  "seatNumber" : "F8",
+  "booked" : false,
+  "type" : "VIP"
+}, {
+  "id" : 265,
+  "screeningId" : 2,
+  "seatNumber" : "F9",
+  "booked" : false,
+  "type" : "VIP"
+}, {
+  "id" : 266,
+  "screeningId" : 2,
+  "seatNumber" : "F10",
+  "booked" : false,
+  "type" : "VIP"
+}, {
+  "id" : 267,
+  "screeningId" : 1,
+  "seatNumber" : "A1",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 268,
+  "screeningId" : 1,
+  "seatNumber" : "A2",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 269,
+  "screeningId" : 1,
+  "seatNumber" : "A3",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 270,
+  "screeningId" : 1,
+  "seatNumber" : "A4",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 271,
+  "screeningId" : 1,
+  "seatNumber" : "A5",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 272,
+  "screeningId" : 1,
+  "seatNumber" : "A6",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 273,
+  "screeningId" : 1,
+  "seatNumber" : "A7",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 274,
+  "screeningId" : 1,
+  "seatNumber" : "A8",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 275,
+  "screeningId" : 1,
+  "seatNumber" : "A9",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 276,
+  "screeningId" : 1,
+  "seatNumber" : "A10",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 277,
+  "screeningId" : 1,
+  "seatNumber" : "B1",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 278,
+  "screeningId" : 1,
+  "seatNumber" : "B2",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 279,
+  "screeningId" : 1,
+  "seatNumber" : "B3",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 280,
+  "screeningId" : 1,
+  "seatNumber" : "B4",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 281,
+  "screeningId" : 1,
+  "seatNumber" : "B5",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 282,
+  "screeningId" : 1,
+  "seatNumber" : "B6",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 283,
+  "screeningId" : 1,
+  "seatNumber" : "B7",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 284,
+  "screeningId" : 1,
+  "seatNumber" : "B8",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 285,
+  "screeningId" : 1,
+  "seatNumber" : "B9",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 286,
+  "screeningId" : 1,
+  "seatNumber" : "B10",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 287,
+  "screeningId" : 1,
+  "seatNumber" : "C1",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 288,
+  "screeningId" : 1,
+  "seatNumber" : "C2",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 289,
+  "screeningId" : 1,
+  "seatNumber" : "C3",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 290,
+  "screeningId" : 1,
+  "seatNumber" : "C4",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 291,
+  "screeningId" : 1,
+  "seatNumber" : "C5",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 292,
+  "screeningId" : 1,
+  "seatNumber" : "C6",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 293,
+  "screeningId" : 1,
+  "seatNumber" : "C7",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 294,
+  "screeningId" : 1,
+  "seatNumber" : "C8",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 295,
+  "screeningId" : 1,
+  "seatNumber" : "C9",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 296,
+  "screeningId" : 1,
+  "seatNumber" : "C10",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 297,
+  "screeningId" : 1,
+  "seatNumber" : "D1",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 298,
+  "screeningId" : 1,
+  "seatNumber" : "D2",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 299,
+  "screeningId" : 1,
+  "seatNumber" : "D3",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 300,
+  "screeningId" : 1,
+  "seatNumber" : "D4",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 301,
+  "screeningId" : 1,
+  "seatNumber" : "D5",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 302,
+  "screeningId" : 1,
+  "seatNumber" : "D6",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 303,
+  "screeningId" : 1,
+  "seatNumber" : "D7",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 304,
+  "screeningId" : 1,
+  "seatNumber" : "D8",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 305,
+  "screeningId" : 1,
+  "seatNumber" : "D9",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 306,
+  "screeningId" : 1,
+  "seatNumber" : "D10",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 307,
+  "screeningId" : 1,
+  "seatNumber" : "E1",
+  "booked" : false,
+  "type" : "VIP"
+}, {
+  "id" : 308,
+  "screeningId" : 1,
+  "seatNumber" : "E2",
+  "booked" : false,
+  "type" : "VIP"
+}, {
+  "id" : 309,
+  "screeningId" : 1,
+  "seatNumber" : "E3",
+  "booked" : false,
+  "type" : "VIP"
+}, {
+  "id" : 310,
+  "screeningId" : 1,
+  "seatNumber" : "E4",
+  "booked" : false,
+  "type" : "VIP"
+}, {
+  "id" : 311,
+  "screeningId" : 1,
+  "seatNumber" : "E5",
+  "booked" : false,
+  "type" : "VIP"
+}, {
+  "id" : 312,
+  "screeningId" : 1,
+  "seatNumber" : "E6",
+  "booked" : false,
+  "type" : "VIP"
+}, {
+  "id" : 313,
+  "screeningId" : 1,
+  "seatNumber" : "E7",
+  "booked" : false,
+  "type" : "VIP"
+}, {
+  "id" : 314,
+  "screeningId" : 1,
+  "seatNumber" : "E8",
+  "booked" : false,
+  "type" : "VIP"
+}, {
+  "id" : 315,
+  "screeningId" : 1,
+  "seatNumber" : "E9",
+  "booked" : false,
+  "type" : "VIP"
+}, {
+  "id" : 316,
+  "screeningId" : 1,
+  "seatNumber" : "E10",
+  "booked" : false,
+  "type" : "VIP"
+}, {
+  "id" : 317,
+  "screeningId" : 1,
+  "seatNumber" : "F1",
+  "booked" : false,
+  "type" : "VIP"
+}, {
+  "id" : 318,
+  "screeningId" : 1,
+  "seatNumber" : "F2",
+  "booked" : false,
+  "type" : "VIP"
+}, {
+  "id" : 319,
+  "screeningId" : 1,
+  "seatNumber" : "F3",
+  "booked" : false,
+  "type" : "VIP"
+}, {
+  "id" : 320,
+  "screeningId" : 1,
+  "seatNumber" : "F4",
+  "booked" : false,
+  "type" : "VIP"
+}, {
+  "id" : 321,
+  "screeningId" : 1,
+  "seatNumber" : "F5",
+  "booked" : false,
+  "type" : "VIP"
+}, {
+  "id" : 322,
+  "screeningId" : 1,
+  "seatNumber" : "F6",
+  "booked" : false,
+  "type" : "VIP"
+}, {
+  "id" : 323,
+  "screeningId" : 1,
+  "seatNumber" : "F7",
+  "booked" : false,
+  "type" : "VIP"
+}, {
+  "id" : 324,
+  "screeningId" : 1,
+  "seatNumber" : "F8",
+  "booked" : false,
+  "type" : "VIP"
+}, {
+  "id" : 325,
+  "screeningId" : 1,
+  "seatNumber" : "F9",
+  "booked" : false,
+  "type" : "VIP"
+}, {
+  "id" : 326,
+  "screeningId" : 1,
+  "seatNumber" : "F10",
+  "booked" : false,
+  "type" : "VIP"
+}, {
+  "id" : 327,
+  "screeningId" : 1,
+  "seatNumber" : "A1",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 328,
+  "screeningId" : 1,
+  "seatNumber" : "A2",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 329,
+  "screeningId" : 1,
+  "seatNumber" : "A3",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 330,
+  "screeningId" : 1,
+  "seatNumber" : "A4",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 331,
+  "screeningId" : 1,
+  "seatNumber" : "A5",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 332,
+  "screeningId" : 1,
+  "seatNumber" : "A6",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 333,
+  "screeningId" : 1,
+  "seatNumber" : "A7",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 334,
+  "screeningId" : 1,
+  "seatNumber" : "A8",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 335,
+  "screeningId" : 1,
+  "seatNumber" : "A9",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 336,
+  "screeningId" : 1,
+  "seatNumber" : "A10",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 337,
+  "screeningId" : 1,
+  "seatNumber" : "B1",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 338,
+  "screeningId" : 1,
+  "seatNumber" : "B2",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 339,
+  "screeningId" : 1,
+  "seatNumber" : "B3",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 340,
+  "screeningId" : 1,
+  "seatNumber" : "B4",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 341,
+  "screeningId" : 1,
+  "seatNumber" : "B5",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 342,
+  "screeningId" : 1,
+  "seatNumber" : "B6",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 343,
+  "screeningId" : 1,
+  "seatNumber" : "B7",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 344,
+  "screeningId" : 1,
+  "seatNumber" : "B8",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 345,
+  "screeningId" : 1,
+  "seatNumber" : "B9",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 346,
+  "screeningId" : 1,
+  "seatNumber" : "B10",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 347,
+  "screeningId" : 1,
+  "seatNumber" : "C1",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 348,
+  "screeningId" : 1,
+  "seatNumber" : "C2",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 349,
+  "screeningId" : 1,
+  "seatNumber" : "C3",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 350,
+  "screeningId" : 1,
+  "seatNumber" : "C4",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 351,
+  "screeningId" : 1,
+  "seatNumber" : "C5",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 352,
+  "screeningId" : 1,
+  "seatNumber" : "C6",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 353,
+  "screeningId" : 1,
+  "seatNumber" : "C7",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 354,
+  "screeningId" : 1,
+  "seatNumber" : "C8",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 355,
+  "screeningId" : 1,
+  "seatNumber" : "C9",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 356,
+  "screeningId" : 1,
+  "seatNumber" : "C10",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 357,
+  "screeningId" : 1,
+  "seatNumber" : "D1",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 358,
+  "screeningId" : 1,
+  "seatNumber" : "D2",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 359,
+  "screeningId" : 1,
+  "seatNumber" : "D3",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 360,
+  "screeningId" : 1,
+  "seatNumber" : "D4",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 361,
+  "screeningId" : 1,
+  "seatNumber" : "D5",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 362,
+  "screeningId" : 1,
+  "seatNumber" : "D6",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 363,
+  "screeningId" : 1,
+  "seatNumber" : "D7",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 364,
+  "screeningId" : 1,
+  "seatNumber" : "D8",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 365,
+  "screeningId" : 1,
+  "seatNumber" : "D9",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 366,
+  "screeningId" : 1,
+  "seatNumber" : "D10",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 367,
+  "screeningId" : 1,
+  "seatNumber" : "E1",
+  "booked" : false,
+  "type" : "VIP"
+}, {
+  "id" : 368,
+  "screeningId" : 1,
+  "seatNumber" : "E2",
+  "booked" : false,
+  "type" : "VIP"
+}, {
+  "id" : 369,
+  "screeningId" : 1,
+  "seatNumber" : "E3",
+  "booked" : false,
+  "type" : "VIP"
+}, {
+  "id" : 370,
+  "screeningId" : 1,
+  "seatNumber" : "E4",
+  "booked" : false,
+  "type" : "VIP"
+}, {
+  "id" : 371,
+  "screeningId" : 1,
+  "seatNumber" : "E5",
+  "booked" : false,
+  "type" : "VIP"
+}, {
+  "id" : 372,
+  "screeningId" : 1,
+  "seatNumber" : "E6",
+  "booked" : false,
+  "type" : "VIP"
+}, {
+  "id" : 373,
+  "screeningId" : 1,
+  "seatNumber" : "E7",
+  "booked" : false,
+  "type" : "VIP"
+}, {
+  "id" : 374,
+  "screeningId" : 1,
+  "seatNumber" : "E8",
+  "booked" : false,
+  "type" : "VIP"
+}, {
+  "id" : 375,
+  "screeningId" : 1,
+  "seatNumber" : "E9",
+  "booked" : false,
+  "type" : "VIP"
+}, {
+  "id" : 376,
+  "screeningId" : 1,
+  "seatNumber" : "E10",
+  "booked" : false,
+  "type" : "VIP"
+}, {
+  "id" : 377,
+  "screeningId" : 1,
+  "seatNumber" : "F1",
+  "booked" : false,
+  "type" : "VIP"
+}, {
+  "id" : 378,
+  "screeningId" : 1,
+  "seatNumber" : "F2",
+  "booked" : false,
+  "type" : "VIP"
+}, {
+  "id" : 379,
+  "screeningId" : 1,
+  "seatNumber" : "F3",
+  "booked" : false,
+  "type" : "VIP"
+}, {
+  "id" : 380,
+  "screeningId" : 1,
+  "seatNumber" : "F4",
+  "booked" : false,
+  "type" : "VIP"
+}, {
+  "id" : 381,
+  "screeningId" : 1,
+  "seatNumber" : "F5",
+  "booked" : false,
+  "type" : "VIP"
+}, {
+  "id" : 382,
+  "screeningId" : 1,
+  "seatNumber" : "F6",
+  "booked" : false,
+  "type" : "VIP"
+}, {
+  "id" : 383,
+  "screeningId" : 1,
+  "seatNumber" : "F7",
+  "booked" : false,
+  "type" : "VIP"
+}, {
+  "id" : 384,
+  "screeningId" : 1,
+  "seatNumber" : "F8",
+  "booked" : false,
+  "type" : "VIP"
+}, {
+  "id" : 385,
+  "screeningId" : 1,
+  "seatNumber" : "F9",
+  "booked" : false,
+  "type" : "VIP"
+}, {
+  "id" : 386,
+  "screeningId" : 1,
+  "seatNumber" : "F10",
+  "booked" : false,
+  "type" : "VIP"
+}, {
+  "id" : 387,
+  "screeningId" : 5,
+  "seatNumber" : "A1",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 388,
+  "screeningId" : 5,
+  "seatNumber" : "A2",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 389,
+  "screeningId" : 5,
+  "seatNumber" : "A3",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 390,
+  "screeningId" : 5,
+  "seatNumber" : "A4",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 391,
+  "screeningId" : 5,
+  "seatNumber" : "A5",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 392,
+  "screeningId" : 5,
+  "seatNumber" : "A6",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 393,
+  "screeningId" : 5,
+  "seatNumber" : "A7",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 394,
+  "screeningId" : 5,
+  "seatNumber" : "A8",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 395,
+  "screeningId" : 5,
+  "seatNumber" : "A9",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 396,
+  "screeningId" : 5,
+  "seatNumber" : "A10",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 397,
+  "screeningId" : 5,
+  "seatNumber" : "B1",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 398,
+  "screeningId" : 5,
+  "seatNumber" : "B2",
+  "booked" : true,
+  "type" : "STANDARD"
+}, {
+  "id" : 399,
+  "screeningId" : 5,
+  "seatNumber" : "B3",
+  "booked" : true,
+  "type" : "STANDARD"
+}, {
+  "id" : 400,
+  "screeningId" : 5,
+  "seatNumber" : "B4",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 401,
+  "screeningId" : 5,
+  "seatNumber" : "B5",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 402,
+  "screeningId" : 5,
+  "seatNumber" : "B6",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 403,
+  "screeningId" : 5,
+  "seatNumber" : "B7",
+  "booked" : true,
+  "type" : "STANDARD"
+}, {
+  "id" : 404,
+  "screeningId" : 5,
+  "seatNumber" : "B8",
+  "booked" : true,
+  "type" : "STANDARD"
+}, {
+  "id" : 405,
+  "screeningId" : 5,
+  "seatNumber" : "B9",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 406,
+  "screeningId" : 5,
+  "seatNumber" : "B10",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 407,
+  "screeningId" : 5,
+  "seatNumber" : "C1",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 408,
+  "screeningId" : 5,
+  "seatNumber" : "C2",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 409,
+  "screeningId" : 5,
+  "seatNumber" : "C3",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 410,
+  "screeningId" : 5,
+  "seatNumber" : "C4",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 411,
+  "screeningId" : 5,
+  "seatNumber" : "C5",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 412,
+  "screeningId" : 5,
+  "seatNumber" : "C6",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 413,
+  "screeningId" : 5,
+  "seatNumber" : "C7",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 414,
+  "screeningId" : 5,
+  "seatNumber" : "C8",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 415,
+  "screeningId" : 5,
+  "seatNumber" : "C9",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 416,
+  "screeningId" : 5,
+  "seatNumber" : "C10",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 417,
+  "screeningId" : 5,
+  "seatNumber" : "D1",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 418,
+  "screeningId" : 5,
+  "seatNumber" : "D2",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 419,
+  "screeningId" : 5,
+  "seatNumber" : "D3",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 420,
+  "screeningId" : 5,
+  "seatNumber" : "D4",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 421,
+  "screeningId" : 5,
+  "seatNumber" : "D5",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 422,
+  "screeningId" : 5,
+  "seatNumber" : "D6",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 423,
+  "screeningId" : 5,
+  "seatNumber" : "D7",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 424,
+  "screeningId" : 5,
+  "seatNumber" : "D8",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 425,
+  "screeningId" : 5,
+  "seatNumber" : "D9",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 426,
+  "screeningId" : 5,
+  "seatNumber" : "D10",
+  "booked" : false,
+  "type" : "STANDARD"
+}, {
+  "id" : 427,
+  "screeningId" : 5,
+  "seatNumber" : "E1",
+  "booked" : false,
+  "type" : "VIP"
+}, {
+  "id" : 428,
+  "screeningId" : 5,
+  "seatNumber" : "E2",
+  "booked" : false,
+  "type" : "VIP"
+}, {
+  "id" : 429,
+  "screeningId" : 5,
+  "seatNumber" : "E3",
+  "booked" : false,
+  "type" : "VIP"
+}, {
+  "id" : 430,
+  "screeningId" : 5,
+  "seatNumber" : "E4",
+  "booked" : false,
+  "type" : "VIP"
+}, {
+  "id" : 431,
+  "screeningId" : 5,
+  "seatNumber" : "E5",
+  "booked" : false,
+  "type" : "VIP"
+}, {
+  "id" : 432,
+  "screeningId" : 5,
+  "seatNumber" : "E6",
+  "booked" : false,
+  "type" : "VIP"
+}, {
+  "id" : 433,
+  "screeningId" : 5,
+  "seatNumber" : "E7",
+  "booked" : false,
+  "type" : "VIP"
+}, {
+  "id" : 434,
+  "screeningId" : 5,
+  "seatNumber" : "E8",
+  "booked" : false,
+  "type" : "VIP"
+}, {
+  "id" : 435,
+  "screeningId" : 5,
+  "seatNumber" : "E9",
+  "booked" : false,
+  "type" : "VIP"
+}, {
+  "id" : 436,
+  "screeningId" : 5,
+  "seatNumber" : "E10",
+  "booked" : false,
+  "type" : "VIP"
+}, {
+  "id" : 437,
+  "screeningId" : 5,
+  "seatNumber" : "F1",
+  "booked" : false,
+  "type" : "VIP"
+}, {
+  "id" : 438,
+  "screeningId" : 5,
+  "seatNumber" : "F2",
+  "booked" : false,
+  "type" : "VIP"
+}, {
+  "id" : 439,
+  "screeningId" : 5,
+  "seatNumber" : "F3",
+  "booked" : false,
+  "type" : "VIP"
+}, {
+  "id" : 440,
+  "screeningId" : 5,
+  "seatNumber" : "F4",
+  "booked" : false,
+  "type" : "VIP"
+}, {
+  "id" : 441,
+  "screeningId" : 5,
+  "seatNumber" : "F5",
+  "booked" : false,
+  "type" : "VIP"
+}, {
+  "id" : 442,
+  "screeningId" : 5,
+  "seatNumber" : "F6",
+  "booked" : false,
+  "type" : "VIP"
+}, {
+  "id" : 443,
+  "screeningId" : 5,
+  "seatNumber" : "F7",
+  "booked" : false,
+  "type" : "VIP"
+}, {
+  "id" : 444,
+  "screeningId" : 5,
+  "seatNumber" : "F8",
+  "booked" : false,
+  "type" : "VIP"
+}, {
+  "id" : 445,
+  "screeningId" : 5,
+  "seatNumber" : "F9",
+  "booked" : false,
+  "type" : "VIP"
+}, {
+  "id" : 446,
+  "screeningId" : 5,
+  "seatNumber" : "F10",
+  "booked" : false,
+  "type" : "VIP"
+} ]

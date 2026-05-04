@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      th:replace="~{fragments/layout :: layout(~{::title}, ~{::main})}">
+<head><title>Movies — CineBook</title></head>
+<body>
+<main>
+    <div class="max-w-7xl mx-auto px-6 py-12">
+
+        <!-- Header -->
+        <div class="flex items-center justify-between mb-10">
+            <h1 class="text-3xl font-bold text-white border-l-4 border-netflix-red pl-4">
+                All Movies
+            </h1>
+            <a th:if="${session.loggedInUser?.role == 'ADMIN'}"
+               href="/movies/admin/add"
+               class="btn-red px-5 py-2 rounded text-white font-semibold text-sm">
+                + Add Movie
+            </a>
+        </div>
+
+        <!-- Grid -->
+        <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-5">
+            <div th:each="movie : ${movies}"
+                 class="bg-netflix-card rounded-md overflow-hidden group hover:scale-105 transition-transform duration-200">
+                <a th:href="@{/movies/{id}(id=${movie.id})}">
+                    <div class="relative">
+                        <img th:src="${movie.posterUrl}"
+                             th:alt="${movie.title}"
+                             class="w-full h-64 object-cover"
+                             onerror="this.src='https://via.placeholder.com/300x450/1F1F1F/E50914?text=No+Poster'"/>
+                        <div class="absolute top-2 right-2 bg-netflix-red text-white text-xs px-2 py-1 rounded">
+                            ★ <span th:text="${movie.rating}"></span>
+                        </div>
+                    </div>
+                    <div class="p-3">
+                        <h3 class="text-white font-semibold text-sm truncate"
+                            th:text="${movie.title}"></h3>
+                        <p class="text-gray-400 text-xs mt-1"
+                           th:text="${movie.genre}"></p>
+                        <p class="text-gray-500 text-xs mt-1"
+                           th:text="${movie.durationMinutes} + ' min'"></p>
+                    </div>
+                </a>
+                <!-- Admin Actions -->
+                <div th:if="${session.loggedInUser?.role == 'ADMIN'}"
+                     class="px-3 pb-3 flex gap-2">
+                    <a th:href="@{/movies/admin/edit/{id}(id=${movie.id})}"
+                       class="flex-1 text-center bg-gray-700 hover:bg-gray-600 text-white text-xs py-1 rounded">
+                        Edit
+                    </a>
+                    <form th:action="@{/movies/admin/delete/{id}(id=${movie.id})}" method="post">
+                        <button type="submit"
+                                onclick="return confirm('Delete this movie?')"
+                                class="bg-netflix-red hover:bg-netflix-darkred text-white text-xs px-3 py-1 rounded">
+                            Delete
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- Empty State -->
+        <div th:if="${#lists.isEmpty(movies)}"
+             class="text-center py-32 text-gray-600">
+            <p class="text-5xl mb-4">🎬</p>
+            <p class="text-xl">No movies yet.</p>
+        </div>
+    </div>
+</main>
+</body>
+</html>

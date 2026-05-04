@@ -1,0 +1,36 @@
+[ {
+  "id" : 1,
+  "userId" : 2,
+  "screeningId" : 1,
+  "seatNumbers" : [ "A2" ],
+  "totalAmount" : 1200.0,
+  "status" : "CANCELLED"
+}, {
+  "id" : 2,
+  "userId" : 2,
+  "screeningId" : 2,
+  "seatNumbers" : [ "B3" ],
+  "totalAmount" : 1400.0,
+  "status" : "CONFIRMED"
+}, {
+  "id" : 3,
+  "userId" : 2,
+  "screeningId" : 2,
+  "seatNumbers" : [ "E3", "E4", "E5" ],
+  "totalAmount" : 4200.0,
+  "status" : "CONFIRMED"
+}, {
+  "id" : 4,
+  "userId" : 3,
+  "screeningId" : 5,
+  "seatNumbers" : [ "B2", "B3" ],
+  "totalAmount" : 1000.0,
+  "status" : "CONFIRMED"
+}, {
+  "id" : 5,
+  "userId" : 4,
+  "screeningId" : 5,
+  "seatNumbers" : [ "B7", "B8" ],
+  "totalAmount" : 1000.0,
+  "status" : "CONFIRMED"
+} ]

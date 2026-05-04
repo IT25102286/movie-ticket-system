@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      th:replace="~{fragments/layout :: layout(~{::title}, ~{::main})}">
+<head>
+    <title>CineBook — Home</title>
+</head>
+<body>
+<main>
+    <!-- Hero -->
+    <div class="relative bg-gradient-to-b from-black via-netflix-dark to-netflix-black">
+        <div class="max-w-7xl mx-auto px-6 py-32 text-center">
+            <h1 class="text-6xl font-black tracking-tight text-white mb-4">
+                Unlimited <span class="text-netflix-red">Movies.</span>
+            </h1>
+            <p class="text-xl text-gray-400 mb-10">
+                Book your seats for the latest blockbusters. Anytime, anywhere.
+            </p>
+            <a href="/movies"
+               class="btn-red px-10 py-4 rounded text-white font-bold text-lg inline-block">
+                Browse Movies
+            </a>
+        </div>
+    </div>
+
+    <!-- Now Showing -->
+    <div class="max-w-7xl mx-auto px-6 py-16">
+        <h2 class="text-2xl font-bold text-white mb-8 border-l-4 border-netflix-red pl-4">
+            Now Showing
+        </h2>
+        <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-4">
+            <div th:each="movie : ${movies}"
+                 class="bg-netflix-card rounded-md overflow-hidden hover:scale-105 transition-transform duration-200 cursor-pointer group">
+                <a th:href="@{/movies/{id}(id=${movie.id})}">
+                    <div class="relative">
+                        <img th:src="${movie.posterUrl}"
+                             th:alt="${movie.title}"
+                             class="w-full h-64 object-cover"
+                             onerror="this.src='https://via.placeholder.com/300x450/1F1F1F/E50914?text=No+Image'"/>
+                        <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-40 transition-all duration-200 flex items-center justify-center">
+                            <span class="text-white font-bold opacity-0 group-hover:opacity-100 text-sm">
+                                View Details
+                            </span>
+                        </div>
+                    </div>
+                    <div class="p-3">
+                        <h3 class="text-white font-semibold text-sm truncate"
+                            th:text="${movie.title}"></h3>
+                        <p class="text-gray-400 text-xs mt-1"
+                           th:text="${movie.genre}"></p>
+                        <div class="flex items-center gap-1 mt-2">
+                            <span class="text-yellow-400 text-xs">★</span>
+                            <span class="text-gray-300 text-xs"
+                                  th:text="${movie.rating}"></span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</main>
+</body>
+</html>

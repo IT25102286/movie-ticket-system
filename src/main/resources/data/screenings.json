@@ -1,0 +1,41 @@
+[ {
+  "id" : 1,
+  "movieId" : 1,
+  "date" : "2026-05-05",
+  "time" : "18:30",
+  "hall" : "Hall 1",
+  "totalSeats" : 6,
+  "ticketPrice" : 1200.0
+}, {
+  "id" : 2,
+  "movieId" : 2,
+  "date" : "2026-05-05",
+  "time" : "21:00",
+  "hall" : "Hall 2",
+  "totalSeats" : 6,
+  "ticketPrice" : 1400.0
+}, {
+  "id" : 3,
+  "movieId" : 3,
+  "date" : "2026-05-03",
+  "time" : "23:55",
+  "hall" : "Hall A",
+  "totalSeats" : 50,
+  "ticketPrice" : 350.0
+}, {
+  "id" : 4,
+  "movieId" : 2,
+  "date" : "2026-05-07",
+  "time" : "15:59",
+  "hall" : "Hall D",
+  "totalSeats" : 65,
+  "ticketPrice" : 450.0
+}, {
+  "id" : 5,
+  "movieId" : 4,
+  "date" : "2026-05-06",
+  "time" : "21:35",
+  "hall" : "Hall X",
+  "totalSeats" : 50,
+  "ticketPrice" : 500.0
+} ]

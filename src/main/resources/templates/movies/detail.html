@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      th:replace="~{fragments/layout :: layout(~{::title}, ~{::main})}">
+<head><title th:text="${movie.title} + ' — CineBook'">Movie Detail</title></head>
+<body>
+<main>
+    <div class="max-w-6xl mx-auto px-6 py-12">
+        <div class="flex flex-col md:flex-row gap-10">
+
+            <!-- Poster -->
+            <div class="w-full md:w-72 flex-shrink-0">
+                <img th:src="${movie.posterUrl}"
+                     th:alt="${movie.title}"
+                     class="w-full rounded-md shadow-2xl"
+                     onerror="this.src='https://via.placeholder.com/300x450/1F1F1F/E50914?text=No+Poster'"/>
+            </div>
+
+            <!-- Details -->
+            <div class="flex-1">
+                <h1 class="text-4xl font-black text-white mb-2"
+                    th:text="${movie.title}"></h1>
+                <div class="flex items-center gap-4 mb-6">
+                    <span class="bg-netflix-red text-white text-sm px-3 py-1 rounded-full"
+                          th:text="${movie.genre}"></span>
+                    <span class="text-gray-400 text-sm"
+                          th:text="${movie.durationMinutes} + ' min'"></span>
+                    <span class="text-yellow-400 font-bold">
+                        ★ <span th:text="${movie.rating}"></span>
+                    </span>
+                </div>
+                <p class="text-gray-300 leading-relaxed text-base mb-10"
+                   th:text="${movie.description}"></p>
+
+                <!-- Book Now -->
+                <a th:if="${session.loggedInUser == null or session.loggedInUser.role != 'ADMIN'}"
+                   th:href="@{/screenings/movie/{id}(id=${movie.id})}"
+                   class="btn-red px-8 py-3 rounded text-white font-bold text-base inline-block">
+                    ▶ Book Tickets
+                </a>
+
+                <!-- Admin Actions -->
+                <div th:if="${session.loggedInUser?.role == 'ADMIN'}"
+                     class="flex gap-3 mt-6">
+                    <a th:href="@{/movies/admin/edit/{id}(id=${movie.id})}"
+                       class="bg-gray-700 hover:bg-gray-600 px-5 py-2 rounded text-white text-sm">
+                        Edit Movie
+                    </a>
+                    <form th:action="@{/movies/admin/delete/{id}(id=${movie.id})}" method="post">
+                        <button type="submit"
+                                onclick="return confirm('Delete this movie?')"
+                                class="bg-netflix-red hover:bg-netflix-darkred px-5 py-2 rounded text-white text-sm">
+                            Delete Movie
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+</body>
+</html>

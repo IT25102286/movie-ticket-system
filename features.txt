@@ -1,0 +1,37 @@
+Movie Booking System - Main 6 Functions with CRUD
+
+1) Movies
+- C (Create): Admin adds movies (`GET/POST /movies/admin/add`)
+- R (Read): View all movies and single movie details (`GET /movies`, `GET /movies/{id}`)
+- U (Update): Admin edits movies (`GET/POST /movies/admin/edit/{id}`)
+- D (Delete): Admin deletes movies (`POST /movies/admin/delete/{id}`)
+
+2) Screenings
+- C (Create): Admin adds screenings (`GET/POST /screenings/admin/add`)
+- R (Read): Admin views all screenings, users view screenings by movie (`GET /screenings/admin`, `GET /screenings/movie/{movieId}`)
+- U (Update): Admin edits screenings (`GET/POST /screenings/admin/edit/{id}`)
+- D (Delete): Admin deletes screenings (`POST /screenings/admin/delete/{id}`)
+
+3) Seats
+- C (Create): Admin generates seat layouts (`GET/POST /seats/admin/generate`)
+- R (Read): Users view/select seats, admins view seat arrangement (`GET /seats/screening/{screeningId}`, `GET /seats/admin/screening/{screeningId}`)
+- U (Update): Admin updates seat booked status (`POST /seats/admin/update/{seatId}`)
+- D (Delete): Admin removes all seats for a screening (`POST /seats/admin/delete/{screeningId}`)
+
+4) Bookings
+- C (Create): User confirms and creates booking (`GET /bookings/confirm`, `POST /bookings/create`)
+- R (Read): User reads own bookings/details, admin reads all bookings (`GET /bookings/my`, `GET /bookings/{id}`, `GET /bookings/admin`)
+- U (Update): Edit existing booking (`GET/POST /bookings/edit/{id}`)
+- D (Delete): Cancel booking (`POST /bookings/cancel/{id}`)
+
+5) Payments
+- C (Create): Start payment and process payment (`GET /payments/pay/{bookingId}`, `POST /payments/pay`)
+- R (Read): Receipt, user payment history, admin payment list (`GET /payments/receipt/{bookingId}`, `GET /payments/my`, `GET /payments/admin`)
+- U (Update): Admin updates payment status (`POST /payments/admin/update/{id}`)
+- D (Delete): Admin deletes payment record (`POST /payments/admin/delete/{id}`)
+
+6) Users (Auth + Profile + Admin user management)
+- C (Create): User registration (`GET/POST /register`)
+- R (Read): Login page, profile, admin user list (`GET /login`, `GET /profile`, `GET /admin/users`)
+- U (Update): Profile update (`POST /profile/update`)
+- D (Delete): Self account delete, admin user delete (`POST /profile/delete`, `POST /admin/users/delete/{id}`)
