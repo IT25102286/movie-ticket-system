@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      th:replace="~{fragments/layout :: layout(~{::title}, ~{::main})}">
+<head><title>Select Seats — CineBook</title></head>
+<body>
+<main>
+    <div class="max-w-4xl mx-auto px-6 py-12">
+        <h1 class="text-3xl font-bold text-white mb-2 border-l-4 border-netflix-red pl-4">
+            Select Your Seats
+        </h1>
+        <p class="text-gray-400 mb-8 pl-5"
+           th:text="${screening.date} + ' at ' + ${screening.time} + ' — ' + ${screening.hall}"></p>
+
+        <!-- Screen -->
+        <div class="w-full bg-gradient-to-b from-netflix-red to-transparent h-2 rounded-full mb-2 opacity-60"></div>
+        <p class="text-center text-gray-600 text-xs tracking-widest mb-8">SCREEN</p>
+
+        <!-- Legend -->
+        <div class="flex justify-center gap-8 mb-8 text-sm">
+            <div class="flex items-center gap-2">
+                <div class="w-5 h-5 rounded bg-gray-700 border border-gray-600"></div>
+                <span class="text-gray-400">Standard</span>
+            </div>
+            <div class="flex items-center gap-2">
+                <div class="w-5 h-5 rounded bg-yellow-700 border border-yellow-600"></div>
+                <span class="text-gray-400">VIP</span>
+            </div>
+            <div class="flex items-center gap-2">
+                <div class="w-5 h-5 rounded bg-netflix-red"></div>
+                <span class="text-gray-400">Booked</span>
+            </div>
+            <div class="flex items-center gap-2">
+                <div class="w-5 h-5 rounded bg-green-600"></div>
+                <span class="text-gray-400">Selected</span>
+            </div>
+        </div>
+
+        <!-- Seat Grid -->
+        <form th:action="@{/bookings/confirm}" method="get" id="seatForm">
+            <input type="hidden" name="screeningId" th:value="${screening.id}"/>
+            <input type="hidden" name="seats" id="selectedSeatsInput" value=""/>
+
+            <div class="space-y-3 mb-10" th:if="${!#lists.isEmpty(seats)}">
+                <div th:each="rowEntry : ${seatRows}" class="flex items-center justify-center gap-3">
+                    <span class="w-6 text-gray-400 text-sm font-semibold text-right"
+                          th:text="${rowEntry.key}"></span>
+                    <div class="flex flex-wrap gap-2 justify-center">
+                        <button th:each="seat : ${rowEntry.value}"
+                                type="button"
+                                th:disabled="${seat.booked}"
+                                th:data-seat="${seat.seatNumber}"
+                                th:data-type="${seat.type}"
+                                th:classappend="${seat.booked} ?
+                                    'bg-netflix-red cursor-not-allowed opacity-60' :
+                                    (${seat.type == 'VIP'} ? 'bg-yellow-700 hover:bg-green-600 cursor-pointer' :
+                                    'bg-gray-700 hover:bg-green-600 cursor-pointer')"
+                                class="w-9 h-9 rounded text-white text-xs font-semibold seat-btn transition-colors"
+                                th:text="${#strings.substring(seat.seatNumber, 1, #strings.length(seat.seatNumber))}">
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div th:if="${#lists.isEmpty(seats)}" class="bg-netflix-dark rounded-lg p-6 mb-10 text-center text-gray-400">
+                Seats are not generated for this screening yet.
+            </div>
+
+            <!-- Summary -->
+            <div class="bg-netflix-dark rounded-lg p-6 flex items-center justify-between">
+                <div>
+                    <p class="text-gray-400 text-sm">Selected Seats</p>
+                    <p class="text-white font-bold mt-1" id="selectedDisplay">None</p>
+                </div>
+                <div>
+                    <p class="text-gray-400 text-sm">Estimated Total</p>
+                    <p class="text-netflix-red font-bold text-xl mt-1" id="totalDisplay">LKR 0</p>
+                </div>
+                <button type="submit"
+                        class="btn-red px-8 py-3 rounded text-white font-bold">
+                    Continue ->
+                </button>
+            </div>
+        </form>
+    </div>
+
+    <script th:inline="javascript">
+        const basePrice = [[${screening.ticketPrice}]];
+        let selected = [];
+
+        document.querySelectorAll('.seat-btn:not(:disabled)').forEach(btn => {
+            btn.addEventListener('click', function() {
+                const seat = this.dataset.seat;
+                const type = this.dataset.type;
+                if (selected.includes(seat)) {
+                    selected = selected.filter(s => s !== seat);
+                    this.classList.remove('bg-green-600');
+                    this.classList.add(type === 'VIP' ? 'bg-yellow-700' : 'bg-gray-700');
+                } else {
+                    selected.push(seat);
+                    this.classList.remove('bg-gray-700', 'bg-yellow-700');
+                    this.classList.add('bg-green-600');
+                }
+                updateSummary();
+            });
+        });
+
+        document.getElementById('seatForm').addEventListener('submit', function (event) {
+            if (selected.length === 0) {
+                event.preventDefault();
+                alert('Please select at least one seat.');
+            }
+        });
+
+        function updateSummary() {
+            document.getElementById('selectedDisplay').textContent =
+                selected.length > 0 ? selected.join(', ') : 'None';
+            document.getElementById('selectedSeatsInput').value = selected.join(',');
+            // Simple estimate — actual price calc happens in service
+            document.getElementById('totalDisplay').textContent =
+                'LKR ' + (basePrice * selected.length).toFixed(2);
+        }
+    </script>
+</main>
+</body>
+</html>
