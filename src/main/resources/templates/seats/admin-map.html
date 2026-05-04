@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      th:replace="~{fragments/layout :: layout(~{::title}, ~{::main})}">
+<head><title>Seat Arrangement — Admin — CineBook</title></head>
+<body>
+<main>
+    <div class="max-w-5xl mx-auto px-6 py-12">
+        <div class="flex items-center justify-between mb-6">
+            <h1 class="text-3xl font-bold text-white border-l-4 border-netflix-red pl-4">
+                Seat Arrangement
+            </h1>
+            <a href="/seats/admin/generate"
+               class="btn-red px-5 py-2 rounded text-white font-semibold text-sm">
+                Regenerate Seats
+            </a>
+        </div>
+
+        <p class="text-gray-400 mb-8 pl-5"
+           th:text="${screening.date} + ' at ' + ${screening.time} + ' — Hall ' + ${screening.hall}"></p>
+
+        <div class="w-full bg-gradient-to-b from-netflix-red to-transparent h-2 rounded-full mb-2 opacity-60"></div>
+        <p class="text-center text-gray-600 text-xs tracking-widest mb-8">SCREEN</p>
+
+        <div class="flex justify-center gap-8 mb-8 text-sm">
+            <div class="flex items-center gap-2">
+                <div class="w-5 h-5 rounded bg-gray-700 border border-gray-600"></div>
+                <span class="text-gray-400">Standard</span>
+            </div>
+            <div class="flex items-center gap-2">
+                <div class="w-5 h-5 rounded bg-yellow-700 border border-yellow-600"></div>
+                <span class="text-gray-400">VIP</span>
+            </div>
+            <div class="flex items-center gap-2">
+                <div class="w-5 h-5 rounded bg-netflix-red"></div>
+                <span class="text-gray-400">Booked</span>
+            </div>
+        </div>
+
+        <div class="space-y-3 mb-10" th:if="${!#lists.isEmpty(seats)}">
+            <div th:each="rowEntry : ${seatRows}" class="flex items-center justify-center gap-3">
+                <span class="w-6 text-gray-400 text-sm font-semibold text-right"
+                      th:text="${rowEntry.key}"></span>
+                <div class="flex flex-wrap gap-2 justify-center">
+                    <div th:each="seat : ${rowEntry.value}"
+                         th:classappend="${seat.booked} ?
+                            'bg-netflix-red border-netflix-red' :
+                            (${seat.type == 'VIP'} ? 'bg-yellow-700 border-yellow-600' :
+                            'bg-gray-700 border-gray-600')"
+                         class="w-9 h-9 rounded border text-white text-xs font-semibold flex items-center justify-center"
+                         th:text="${#strings.substring(seat.seatNumber, 1, #strings.length(seat.seatNumber))}">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div th:if="${#lists.isEmpty(seats)}" class="bg-netflix-dark rounded-lg p-6 text-center text-gray-400">
+            No seats found for this screening. Generate seats first.
+        </div>
+    </div>
+</main>
+</body>
+</html>
