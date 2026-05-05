@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      th:replace="~{fragments/layout :: layout(~{::title}, ~{::main})}">
+<head><title>Screenings — CineBook</title></head>
+<body>
+<main>
+    <div class="max-w-7xl mx-auto px-6 py-12">
+        <div class="flex items-center justify-between mb-10">
+            <h1 class="text-3xl font-bold text-white border-l-4 border-netflix-red pl-4">
+                All Screenings
+            </h1>
+            <a href="/screenings/admin/add"
+               class="btn-red px-5 py-2 rounded text-white font-semibold text-sm">
+                + Add Screening
+            </a>
+        </div>
+
+        <div class="bg-netflix-dark rounded-lg overflow-hidden">
+            <table class="w-full text-sm">
+                <thead class="bg-netflix-card text-gray-400 uppercase text-xs tracking-wider">
+                <tr>
+                    <th class="px-6 py-4 text-left">Movie</th>
+                    <th class="px-6 py-4 text-left">Date</th>
+                    <th class="px-6 py-4 text-left">Time</th>
+                    <th class="px-6 py-4 text-left">Hall</th>
+                    <th class="px-6 py-4 text-left">Seats</th>
+                    <th class="px-6 py-4 text-left">Price</th>
+                    <th class="px-6 py-4 text-left">Actions</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr th:each="screening, iter : ${screenings}"
+                    th:classappend="${iter.odd} ? 'bg-netflix-black' : 'bg-netflix-dark'"
+                    class="border-t border-gray-800 hover:bg-netflix-card transition-colors">
+                    <td class="px-6 py-4 text-white font-medium"
+                        th:text="${movieTitleById[screening.movieId] ?: 'Unknown'}"></td>
+                    <td class="px-6 py-4 text-gray-300" th:text="${screening.date}"></td>
+                    <td class="px-6 py-4 text-gray-300" th:text="${screening.time}"></td>
+                    <td class="px-6 py-4 text-gray-300" th:text="${screening.hall}"></td>
+                    <td class="px-6 py-4 text-gray-300" th:text="${screening.totalSeats}"></td>
+                    <td class="px-6 py-4 text-netflix-red font-semibold"
+                        th:text="'LKR ' + ${screening.ticketPrice}"></td>
+                    <td class="px-6 py-4">
+                        <div class="flex gap-2">
+                            <a th:href="@{/seats/screening/{id}(id=${screening.id})}"
+                               class="bg-blue-700 hover:bg-blue-600 px-3 py-1 rounded text-white text-xs">
+                                Seat Layout
+                            </a>
+                            <a th:href="@{/screenings/admin/edit/{id}(id=${screening.id})}"
+                               class="bg-gray-700 hover:bg-gray-600 px-3 py-1 rounded text-white text-xs">
+                                Edit
+                            </a>
+                            <form th:action="@{/screenings/admin/delete/{id}(id=${screening.id})}"
+                                  method="post">
+                                <button type="submit"
+                                        onclick="return confirm('Delete screening?')"
+                                        class="bg-netflix-red hover:bg-netflix-darkred px-3 py-1 rounded text-white text-xs">
+                                    Delete
+                                </button>
+                            </form>
+                        </div>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+            <div th:if="${#lists.isEmpty(screenings)}"
+                 class="text-center py-16 text-gray-600">No screenings scheduled.</div>
+        </div>
+    </div>
+</main>
+</body>
+</html>
