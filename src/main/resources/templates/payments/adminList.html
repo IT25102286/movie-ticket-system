@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      th:replace="~{fragments/layout :: layout(~{::title}, ~{::main})}">
+<head><title>All Payments — CineBook Admin</title></head>
+<body>
+<main>
+    <div class="max-w-7xl mx-auto px-6 py-12">
+        <h1 class="text-3xl font-bold text-white mb-10 border-l-4 border-netflix-red pl-4">
+            All Payments
+        </h1>
+        <div class="bg-netflix-dark rounded-lg overflow-hidden mb-8">
+            <table class="w-full text-sm">
+                <thead class="bg-netflix-card text-gray-400 uppercase text-xs tracking-wider">
+                <tr>
+                    <th class="px-6 py-4 text-left">ID</th>
+                    <th class="px-6 py-4 text-left">Booking</th>
+                    <th class="px-6 py-4 text-left">User</th>
+                    <th class="px-6 py-4 text-left">Method</th>
+                    <th class="px-6 py-4 text-left">Amount</th>
+                    <th class="px-6 py-4 text-left">Status</th>
+                    <th class="px-6 py-4 text-left">Actions</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr th:each="payment, iter : ${payments}"
+                    th:classappend="${iter.odd} ? 'bg-netflix-black' : 'bg-netflix-dark'"
+                    class="border-t border-gray-800 hover:bg-netflix-card transition-colors">
+                    <td class="px-6 py-4 text-gray-500" th:text="'#' + ${payment.id}"></td>
+                    <td class="px-6 py-4 text-gray-300" th:text="'#' + ${payment.bookingId}"></td>
+                    <td class="px-6 py-4 text-gray-300" th:text="${payment.userId}"></td>
+                    <td class="px-6 py-4 text-gray-300" th:text="${payment.method}"></td>
+                    <td class="px-6 py-4 text-netflix-red font-semibold"
+                        th:text="'LKR ' + ${payment.amount}"></td>
+                    <td class="px-6 py-4">
+                        <span th:classappend="${payment.status == 'COMPLETED'} ? 'bg-green-800 text-green-300' : 'bg-yellow-800 text-yellow-300'"
+                              class="text-xs px-2 py-1 rounded-full"
+                              th:text="${payment.status}"></span>
+                    </td>
+                    <td class="px-6 py-4">
+                        <div class="flex gap-2">
+                            <form th:action="@{/payments/admin/update/{id}(id=${payment.id})}"
+                                  method="post" class="flex gap-1">
+                                <select name="status"
+                                        class="bg-netflix-card border border-gray-700 rounded px-2 py-1 text-white text-xs">
+                                    <option value="COMPLETED">COMPLETED</option>
+                                    <option value="REFUNDED">REFUNDED</option>
+                                </select>
+                                <button type="submit"
+                                        class="bg-gray-700 hover:bg-gray-600 px-2 py-1 rounded text-white text-xs">
+                                    Update
+                                </button>
+                            </form>
+                            <form th:action="@{/payments/admin/delete/{id}(id=${payment.id})}"
+                                  method="post">
+                                <button type="submit"
+                                        onclick="return confirm('Delete this payment record?')"
+                                        class="bg-netflix-red hover:bg-netflix-darkred px-2 py-1 rounded text-white text-xs">
+                                    Delete
+                                </button>
+                            </form>
+                        </div>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</main>
+</body>
+</html>

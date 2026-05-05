@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      th:replace="~{fragments/layout :: layout(~{::title}, ~{::main})}">
+<head><title>Payment — CineBook</title></head>
+<body>
+<main>
+    <div class="max-w-2xl mx-auto px-6 py-12">
+        <h1 class="text-3xl font-bold text-white mb-8 border-l-4 border-netflix-red pl-4">
+            Complete Payment
+        </h1>
+
+        <!-- Summary -->
+        <div class="bg-netflix-dark rounded-lg p-6 mb-6 flex justify-between items-center">
+            <div>
+                <p class="text-gray-400 text-sm">Booking</p>
+                <p class="text-white font-bold" th:text="'#' + ${booking.id}"></p>
+            </div>
+            <div>
+                <p class="text-gray-400 text-sm">Seats</p>
+                <p class="text-white" th:text="${booking.seatNumbers}"></p>
+            </div>
+            <div>
+                <p class="text-gray-400 text-sm">Amount Due</p>
+                <p class="text-netflix-red font-black text-2xl"
+                   th:text="'LKR ' + ${booking.totalAmount}"></p>
+            </div>
+        </div>
+
+        <!-- Payment Form -->
+        <form th:action="@{/payments/pay}" method="post"
+              class="bg-netflix-dark rounded-lg p-8 space-y-5">
+            <input type="hidden" name="bookingId" th:value="${booking.id}"/>
+
+            <div>
+                <label class="block text-gray-400 text-sm mb-3">Payment Method</label>
+                <div class="grid grid-cols-2 gap-3">
+                    <label class="flex items-center gap-3 bg-netflix-card border border-gray-700 rounded-lg p-4 cursor-pointer hover:border-netflix-red transition-colors">
+                        <input type="radio" name="method" value="CARD" class="accent-netflix-red"
+                               onchange="toggleFields(this.value)"/>
+                        <span class="text-white">💳 Card</span>
+                    </label>
+                    <label class="flex items-center gap-3 bg-netflix-card border border-gray-700 rounded-lg p-4 cursor-pointer hover:border-netflix-red transition-colors">
+                        <input type="radio" name="method" value="CASH" class="accent-netflix-red"
+                               onchange="toggleFields(this.value)"/>
+                        <span class="text-white">💵 Cash</span>
+                    </label>
+                </div>
+            </div>
+
+            <!-- Card Fields -->
+            <div id="cardFields" class="space-y-4 hidden">
+                <div>
+                    <label class="block text-gray-400 text-sm mb-1">Cardholder Name</label>
+                    <input type="text" name="cardHolderName"
+                           class="w-full bg-netflix-card border border-gray-700 rounded px-4 py-3 text-white text-sm"
+                           placeholder="Name on card"/>
+                </div>
+                <div>
+                    <label class="block text-gray-400 text-sm mb-1">Card Number (last 4 digits)</label>
+                    <input type="text" name="maskedCardNumber" maxlength="4"
+                           class="w-full bg-netflix-card border border-gray-700 rounded px-4 py-3 text-white text-sm"
+                           placeholder="4242"/>
+                </div>
+            </div>
+
+            <!-- Cash Fields -->
+            <div id="cashFields" class="space-y-4 hidden">
+                <div>
+                    <label class="block text-gray-400 text-sm mb-1">Received By (Staff Name)</label>
+                    <input type="text" name="receivedBy"
+                           class="w-full bg-netflix-card border border-gray-700 rounded px-4 py-3 text-white text-sm"
+                           placeholder="Staff member name"/>
+                </div>
+            </div>
+
+            <button type="submit" class="btn-red w-full py-3 rounded text-white font-bold text-base">
+                Pay Now
+            </button>
+        </form>
+    </div>
+
+    <script>
+        function toggleFields(method) {
+            document.getElementById('cardFields').classList.toggle('hidden', method !== 'CARD');
+            document.getElementById('cashFields').classList.toggle('hidden', method !== 'CASH');
+        }
+    </script>
+</main>
+</body>
+</html>
