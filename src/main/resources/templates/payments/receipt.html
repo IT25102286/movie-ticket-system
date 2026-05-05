@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      th:replace="~{fragments/layout :: layout(~{::title}, ~{::main})}">
+<head><title>Receipt — CineBook</title></head>
+<body>
+<main>
+  <div class="max-w-xl mx-auto px-6 py-12">
+    <!-- Success Banner -->
+    <div class="text-center mb-10">
+      <div class="text-6xl mb-4">✅</div>
+      <h1 class="text-3xl font-black text-white">Booking Confirmed!</h1>
+      <p class="text-gray-400 mt-2">Your payment was successful.</p>
+    </div>
+
+    <!-- Receipt Card -->
+    <div class="bg-netflix-dark border border-gray-800 rounded-lg overflow-hidden">
+      <div class="bg-netflix-red px-6 py-4">
+        <h2 class="text-white font-bold text-lg">Payment Receipt</h2>
+      </div>
+      <div class="p-6 space-y-4">
+        <div class="flex justify-between border-b border-gray-800 pb-3">
+          <span class="text-gray-400">Payment ID</span>
+          <span class="text-white" th:text="'#' + ${payment.id}"></span>
+        </div>
+        <div class="flex justify-between border-b border-gray-800 pb-3">
+          <span class="text-gray-400">Booking ID</span>
+          <span class="text-white" th:text="'#' + ${booking.id}"></span>
+        </div>
+        <div class="flex justify-between border-b border-gray-800 pb-3">
+          <span class="text-gray-400">Seats</span>
+          <span class="text-white" th:text="${booking.seatNumbers}"></span>
+        </div>
+        <div class="flex justify-between border-b border-gray-800 pb-3">
+          <span class="text-gray-400">Method</span>
+          <span class="text-white" th:text="${payment.method}"></span>
+        </div>
+        <div class="flex justify-between border-b border-gray-800 pb-3">
+          <span class="text-gray-400">Payment Details</span>
+          <span class="text-white text-sm" th:text="${payment.paymentDetails}"></span>
+        </div>
+        <div class="flex justify-between border-b border-gray-800 pb-3">
+          <span class="text-gray-400">Date & Time</span>
+          <span class="text-white text-sm" th:text="${payment.timestamp}"></span>
+        </div>
+        <div class="flex justify-between pt-2">
+          <span class="text-white font-bold text-lg">Total Paid</span>
+          <span class="text-netflix-red font-black text-2xl"
+                th:text="'LKR ' + ${payment.amount}"></span>
+        </div>
+      </div>
+    </div>
+
+    <div class="mt-6 flex gap-3">
+      <a href="/bookings/my"
+         class="btn-red flex-1 py-3 rounded text-white font-semibold text-center">
+        My Bookings
+      </a>
+      <a href="/movies"
+         class="flex-1 bg-gray-700 hover:bg-gray-600 py-3 rounded text-white font-semibold text-center">
+        Browse More
+      </a>
+    </div>
+  </div>
+</main>
+</body>
+</html>
