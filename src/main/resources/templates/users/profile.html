@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      th:replace="~{fragments/layout :: layout(~{::title}, ~{::main})}">
+<head><title>My Profile — CineBook</title></head>
+<body>
+<main>
+    <div class="max-w-2xl mx-auto px-6 py-12">
+        <h1 class="text-3xl font-bold text-white mb-8 border-l-4 border-netflix-red pl-4">
+            My Profile
+        </h1>
+        <form th:action="@{/profile/update}" th:object="${user}" method="post"
+              class="bg-netflix-dark rounded-lg p-8 space-y-5">
+            <input type="hidden" th:field="*{id}"/>
+            <input type="hidden" th:field="*{role}"/>
+            <div>
+                <label class="block text-gray-400 text-sm mb-1">Full Name</label>
+                <input type="text" th:field="*{name}"
+                       class="w-full bg-netflix-card border border-gray-700 rounded px-4 py-3 text-white text-sm"/>
+            </div>
+            <div>
+                <label class="block text-gray-400 text-sm mb-1">Email</label>
+                <input type="email" th:field="*{email}"
+                       class="w-full bg-netflix-card border border-gray-700 rounded px-4 py-3 text-white text-sm"/>
+            </div>
+            <div>
+                <label class="block text-gray-400 text-sm mb-1">Phone</label>
+                <input type="tel" th:field="*{phone}"
+                       class="w-full bg-netflix-card border border-gray-700 rounded px-4 py-3 text-white text-sm"/>
+            </div>
+            <div>
+                <label class="block text-gray-400 text-sm mb-1">Password</label>
+                <input type="password" th:field="*{password}"
+                       class="w-full bg-netflix-card border border-gray-700 rounded px-4 py-3 text-white text-sm"/>
+            </div>
+            <div class="flex gap-3 pt-2">
+                <button type="submit" class="btn-red px-8 py-3 rounded text-white font-semibold">
+                    Save Changes
+                </button>
+            </div>
+        </form>
+
+        <!-- Danger Zone -->
+        <div class="mt-8 bg-netflix-dark border border-red-900 rounded-lg p-6">
+            <h2 class="text-red-400 font-semibold mb-3">Danger Zone</h2>
+            <p class="text-gray-500 text-sm mb-4">
+                Deleting your account is permanent and cannot be undone.
+            </p>
+            <form th:action="@{/profile/delete}" method="post">
+                <button type="submit"
+                        onclick="return confirm('Are you sure? This cannot be undone.')"
+                        class="bg-transparent border border-netflix-red text-netflix-red hover:bg-netflix-red hover:text-white px-6 py-2 rounded text-sm font-semibold transition-colors">
+                    Delete My Account
+                </button>
+            </form>
+        </div>
+    </div>
+</main>
+</body>
+</html>
