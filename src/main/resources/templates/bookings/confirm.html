@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      th:replace="~{fragments/layout :: layout(~{::title}, ~{::main})}">
+<head><title>Confirm Booking — CineBook</title></head>
+<body>
+<main>
+    <div class="max-w-2xl mx-auto px-6 py-12">
+        <h1 class="text-3xl font-bold text-white mb-8 border-l-4 border-netflix-red pl-4">
+            Confirm Booking
+        </h1>
+        <div class="bg-netflix-dark rounded-lg p-8 space-y-5 mb-6">
+            <div class="flex justify-between border-b border-gray-800 pb-4">
+                <span class="text-gray-400">Screening</span>
+                <span class="text-white font-medium"
+                      th:text="${screening.date} + ' at ' + ${screening.time}"></span>
+            </div>
+            <div class="flex justify-between border-b border-gray-800 pb-4">
+                <span class="text-gray-400">Hall</span>
+                <span class="text-white" th:text="${screening.hall}"></span>
+            </div>
+            <div class="flex justify-between border-b border-gray-800 pb-4">
+                <span class="text-gray-400">Selected Seats</span>
+                <span class="text-white font-medium" th:text="${seats}"></span>
+            </div>
+            <div class="flex justify-between">
+                <span class="text-gray-400">Total Amount</span>
+                <span class="text-netflix-red font-bold text-xl"
+                      th:text="'LKR ' + ${totalAmount}"></span>
+            </div>
+        </div>
+
+        <form th:action="@{/bookings/create}" method="post">
+            <input type="hidden" name="screeningId" th:value="${screeningId}"/>
+            <input type="hidden" name="seats" th:value="${seats}"/>
+            <input type="hidden" name="totalAmount" th:value="${totalAmount}"/>
+            <div class="flex gap-3">
+                <button type="submit" class="btn-red flex-1 py-3 rounded text-white font-bold text-base">
+                    Confirm & Book
+                </button>
+                <a th:href="@{/seats/screening/{id}(id=${screeningId})}"
+                   class="flex-1 bg-gray-700 hover:bg-gray-600 py-3 rounded text-white font-semibold text-center">
+                    Go Back
+                </a>
+            </div>
+        </form>
+    </div>
+</main>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      th:replace="~{fragments/layout :: layout(~{::title}, ~{::main})}">
+<head><title>Edit Booking — CineBook</title></head>
+<body>
+<main>
+    <div class="max-w-2xl mx-auto px-6 py-12">
+        <h1 class="text-3xl font-bold text-white mb-8 border-l-4 border-netflix-red pl-4">
+            Edit Booking
+        </h1>
+        <form th:action="@{/bookings/edit/{id}(id=${booking.id})}"
+              th:object="${booking}" method="post"
+              class="bg-netflix-dark rounded-lg p-8 space-y-5">
+            <input type="hidden" th:field="*{userId}"/>
+            <input type="hidden" th:field="*{screeningId}"/>
+            <input type="hidden" th:field="*{totalAmount}"/>
+            <input type="hidden" th:field="*{status}"/>
+            <div>
+                <label class="block text-gray-400 text-sm mb-1">
+                    Seat Numbers (comma separated)
+                </label>
+                <input type="text" name="seatNumbersRaw"
+                       th:value="${#strings.listJoin(booking.seatNumbers, ',')}"
+                       class="w-full bg-netflix-card border border-gray-700 rounded px-4 py-3 text-white text-sm"
+                       placeholder="A1,A2,B3"/>
+                <p class="text-gray-600 text-xs mt-1">
+                    Enter seat numbers separated by commas
+                </p>
+            </div>
+            <div class="flex gap-3 pt-2">
+                <button type="submit" class="btn-red px-8 py-3 rounded text-white font-semibold">
+                    Update Booking
+                </button>
+                <a href="/bookings/my"
+                   class="bg-gray-700 hover:bg-gray-600 px-8 py-3 rounded text-white font-semibold">
+                    Cancel
+                </a>
+            </div>
+        </form>
+    </div>
+</main>
+</body>
+</html>

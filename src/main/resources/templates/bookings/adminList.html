@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      th:replace="~{fragments/layout :: layout(~{::title}, ~{::main})}">
+<head><title>All Bookings — CineBook Admin</title></head>
+<body>
+<main>
+    <div class="max-w-7xl mx-auto px-6 py-12">
+        <h1 class="text-3xl font-bold text-white mb-10 border-l-4 border-netflix-red pl-4">
+            All Bookings
+        </h1>
+        <div class="bg-netflix-dark rounded-lg overflow-hidden">
+            <table class="w-full text-sm">
+                <thead class="bg-netflix-card text-gray-400 uppercase text-xs tracking-wider">
+                <tr>
+                    <th class="px-6 py-4 text-left">ID</th>
+                    <th class="px-6 py-4 text-left">User ID</th>
+                    <th class="px-6 py-4 text-left">Screening ID</th>
+                    <th class="px-6 py-4 text-left">Seats</th>
+                    <th class="px-6 py-4 text-left">Total</th>
+                    <th class="px-6 py-4 text-left">Status</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr th:each="booking, iter : ${bookings}"
+                    th:classappend="${iter.odd} ? 'bg-netflix-black' : 'bg-netflix-dark'"
+                    class="border-t border-gray-800 hover:bg-netflix-card transition-colors">
+                    <td class="px-6 py-4 text-gray-500" th:text="'#' + ${booking.id}"></td>
+                    <td class="px-6 py-4 text-gray-300" th:text="${booking.userId}"></td>
+                    <td class="px-6 py-4 text-gray-300" th:text="${booking.screeningId}"></td>
+                    <td class="px-6 py-4 text-gray-300" th:text="${booking.seatNumbers}"></td>
+                    <td class="px-6 py-4 text-netflix-red font-semibold"
+                        th:text="'LKR ' + ${booking.totalAmount}"></td>
+                    <td class="px-6 py-4">
+                        <span th:classappend="${booking.status == 'CONFIRMED'} ? 'bg-green-800 text-green-300' : 'bg-gray-700 text-gray-400'"
+                              class="text-xs px-2 py-1 rounded-full"
+                              th:text="${booking.status}"></span>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</main>
+</body>
+</html>
