@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      th:replace="~{fragments/layout :: layout(~{::title}, ~{::main})}">
+<head><title>My Bookings — CineBook</title></head>
+<body>
+<main>
+    <div class="max-w-5xl mx-auto px-6 py-12">
+        <h1 class="text-3xl font-bold text-white mb-10 border-l-4 border-netflix-red pl-4">
+            My Bookings
+        </h1>
+        <div class="space-y-4">
+            <div th:each="booking : ${bookings}"
+                 class="bg-netflix-dark border border-gray-800 rounded-lg p-6 flex items-center justify-between hover:border-gray-700 transition-colors">
+                <div class="flex gap-10">
+                    <div>
+                        <p class="text-gray-500 text-xs uppercase">Booking ID</p>
+                        <p class="text-white font-bold mt-1" th:text="'#' + ${booking.id}"></p>
+                    </div>
+                    <div>
+                        <p class="text-gray-500 text-xs uppercase">Seats</p>
+                        <p class="text-white mt-1" th:text="${booking.seatNumbers}"></p>
+                    </div>
+                    <div>
+                        <p class="text-gray-500 text-xs uppercase">Total</p>
+                        <p class="text-netflix-red font-bold mt-1"
+                           th:text="'LKR ' + ${booking.totalAmount}"></p>
+                    </div>
+                    <div>
+                        <p class="text-gray-500 text-xs uppercase">Status</p>
+                        <span th:classappend="${booking.status == 'CONFIRMED'} ? 'bg-green-800 text-green-300' : 'bg-gray-700 text-gray-400'"
+                              class="inline-block mt-1 text-xs px-2 py-1 rounded-full"
+                              th:text="${booking.status}"></span>
+                    </div>
+                </div>
+                <div class="flex gap-2" th:if="${booking.status == 'CONFIRMED'}">
+                    <a th:href="@{/bookings/{id}(id=${booking.id})}"
+                       class="bg-gray-700 hover:bg-gray-600 px-4 py-2 rounded text-white text-sm">
+                        View
+                    </a>
+                    <form th:action="@{/bookings/cancel/{id}(id=${booking.id})}" method="post">
+                        <button type="submit"
+                                onclick="return confirm('Cancel this booking?')"
+                                class="bg-netflix-red hover:bg-netflix-darkred px-4 py-2 rounded text-white text-sm">
+                            Cancel
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div th:if="${#lists.isEmpty(bookings)}"
+             class="text-center py-24 text-gray-600">
+            <p class="text-5xl mb-4">🎟️</p>
+            <p class="text-xl">No bookings yet.</p>
+            <a href="/movies" class="text-netflix-red hover:underline mt-2 inline-block">Browse Movies</a>
+        </div>
+    </div>
+</main>
+</body>
+</html>

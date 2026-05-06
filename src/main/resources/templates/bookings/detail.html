@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      th:replace="~{fragments/layout :: layout(~{::title}, ~{::main})}">
+<head><title>Booking Detail — CineBook</title></head>
+<body>
+<main>
+    <div class="max-w-2xl mx-auto px-6 py-12">
+        <h1 class="text-3xl font-bold text-white mb-8 border-l-4 border-netflix-red pl-4">
+            Booking Detail
+        </h1>
+        <div class="bg-netflix-dark rounded-lg p-8 space-y-5">
+            <div class="flex justify-between border-b border-gray-800 pb-4">
+                <span class="text-gray-400">Booking ID</span>
+                <span class="text-white font-bold" th:text="'#' + ${booking.id}"></span>
+            </div>
+            <div class="flex justify-between border-b border-gray-800 pb-4">
+                <span class="text-gray-400">Screening</span>
+                <span class="text-white"
+                      th:text="${screening.date} + ' at ' + ${screening.time}"></span>
+            </div>
+            <div class="flex justify-between border-b border-gray-800 pb-4">
+                <span class="text-gray-400">Hall</span>
+                <span class="text-white" th:text="${screening.hall}"></span>
+            </div>
+            <div class="flex justify-between border-b border-gray-800 pb-4">
+                <span class="text-gray-400">Seats</span>
+                <span class="text-white" th:text="${booking.seatNumbers}"></span>
+            </div>
+            <div class="flex justify-between border-b border-gray-800 pb-4">
+                <span class="text-gray-400">Total Amount</span>
+                <span class="text-netflix-red font-bold"
+                      th:text="'LKR ' + ${booking.totalAmount}"></span>
+            </div>
+            <div class="flex justify-between">
+                <span class="text-gray-400">Status</span>
+                <span th:classappend="${booking.status == 'CONFIRMED'} ? 'bg-green-800 text-green-300' : 'bg-gray-700 text-gray-400'"
+                      class="text-xs px-3 py-1 rounded-full"
+                      th:text="${booking.status}"></span>
+            </div>
+        </div>
+        <div class="mt-6 flex gap-3" th:if="${booking.status == 'CONFIRMED'}">
+            <a th:href="@{/payments/pay/{id}(id=${booking.id})}"
+               class="btn-red px-8 py-3 rounded text-white font-semibold">
+                Pay Now
+            </a>
+            <a href="/bookings/my"
+               class="bg-gray-700 hover:bg-gray-600 px-8 py-3 rounded text-white font-semibold">
+                Back
+            </a>
+        </div>
+    </div>
+</main>
+</body>
+</html>
