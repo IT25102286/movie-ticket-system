@@ -39,7 +39,7 @@ public class PaymentController {
         return "payments/pay";
     }
 
-    // CREATE — process payment
+    // CREATE — process payment ,,
     // PaymentController.java — updated pay endpoint
     @PostMapping("/pay")
     public String processPayment(@RequestParam int bookingId,
